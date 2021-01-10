@@ -3,3 +3,106 @@
     margin: 0px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+
+html {
+    background-color: #1a1a1a;
+}
+
+body {
+    background-color: #4b4b4b;
+    margin: 0px auto;
+    width: 800px;
+    /* height: 99vh; */
+
+}
+
+header {
+    background-color: #000;
+    color: white;
+    padding: 5px;
+    
+}
+
+/* shutting the boring bullets down */
+li {
+    list-style-type: none;
+    
+}
+
+/* the main container-insuring that the flex-boxes and elements contained get the 100% space inside the body */
+
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    /* width: 100%; */
+    /* height: 100%; */
+}
+
+/* 1.flex.box alone as navigation bar horizontal */
+.flex-nav {
+    display: flex;
+    justify-content: center;    /* for the centering..goes with the margin in UL as well*/
+    
+}
+
+.flex-nav ul {
+    border: 2px solid;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;  /* or -around?*/
+    width: 33%;
+    padding: 10px;
+    /* margin: 0 auto; */
+}
+
+.flex-nav li {
+    /* border: 1px dotted; */
+    color: white;
+}
+
+/* 2. flex-box-consists of the .nav-aside & flex_thumbnails */
+
+.flex-box-body {
+    display: flex;
+    height: 100%;
+    /* align-items: stretch; */
+    
+}
+
+/* navigation bar/ genres list vertical aside */
+
+.nav-aside {
+    background-color: white;
+    padding: 10px;
+    
+}
+
+.nav-aside li {
+    margin: 5px;
+}
+
+
+/* 3. flex-box-is inside of flex-body */
+.flex-box-thumbnails {
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+    /* padding-right: 20px; */
+    /* flex-grow: 1; */
+   
+}
+
+.thumbnail {
+    width: 150px;
+    margin: 15px;
+}
+
+.thumbnail p {
+    background-color: #1a1a1a;
+    color: white;
+    padding: 5px;
+    margin-top: -3px;
+    
+
+}
+
