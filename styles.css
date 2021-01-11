@@ -46,7 +46,7 @@ li {
 }
 
 .flex-nav ul {
-    border: 2px solid;
+    /* border: 2px solid; */
     display: flex;
     flex-direction: row;
     justify-content: space-between;  /* or -around?*/
@@ -58,6 +58,15 @@ li {
 .flex-nav li {
     /* border: 1px dotted; */
     color: white;
+    cursor: pointer;
+    
+}
+
+.flex-nav li:hover {
+    text-shadow: 4px 2px 1px grey, 4px 3px 1px grey,4px 4px 1px grey, 4px 5px 1px grey, 4px 6px 1px grey;
+    color: turquoise;
+    transition: 0.5s;
+    
 }
 
 /* 2. flex-box-consists of the .nav-aside & flex_thumbnails */
@@ -75,10 +84,21 @@ li {
     background-color: white;
     padding: 10px;
     
+    
 }
 
 .nav-aside li {
-    margin: 5px;
+    margin: 10px 5px;
+    cursor: pointer;
+}
+
+.nav-aside li:hover {
+    padding: 10px;
+    margin: 6px;
+    background-color: lightgrey;
+    border-radius: 2px 2px 20px 2px;
+    box-shadow: 3px 3px 2px grey;
+    transition: 0.5s ease;
 }
 
 
@@ -102,7 +122,15 @@ li {
     color: white;
     padding: 5px;
     margin-top: -3px;
-    
+}
 
+.thumbnail:hover {
+    opacity: 60%;
+    border-right: 4px solid red ;
+    box-shadow: -4px -4px 2px rgb(31, 27, 27),-6px -6px 3px rgb(97, 42, 42), -8px -8px 4px grey;
+    cursor: pointer;
+    padding: 5px 0 0 5px;
+    
+    
 }
 
